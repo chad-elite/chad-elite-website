@@ -14,7 +14,7 @@
     .wrap{width:min(1150px,92%);margin:auto}
     header{position:sticky;top:0;z-index:20;background:rgba(4,14,27,.96);border-bottom:1px solid var(--line)}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:72px}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.25rem;letter-spacing:-.5px}.brand span{color:var(--blue)}.brand-logo{width:42px;height:48px;object-fit:cover;border-radius:7px;border:1px solid var(--line);background:#17282f}.brand-text{display:flex;flex-direction:column;line-height:1.1}.brand-text small{font-size:.62rem;letter-spacing:1.4px;color:var(--muted);margin-top:5px}
+    .brand{font-weight:900;font-size:1.25rem;letter-spacing:-.5px}.brand span{color:var(--blue)}
     nav{display:flex;gap:18px;font-size:.82rem;font-weight:700}
     nav a:hover{color:var(--blue2)}
     .btn{display:inline-block;background:var(--blue);color:#fff;font-weight:800;padding:11px 17px;border-radius:30px;border:0;cursor:pointer}
@@ -42,7 +42,7 @@
     .video-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel)}
     .video-card h3{font-size:1rem;padding:12px 14px 0}
     .video-card p{color:var(--muted);font-size:.83rem;padding:2px 14px 14px}
-    .video-frame{width:100%;aspect-ratio:9/16;max-height:510px;border:0;display:block;background:#000}.video-wallpaper{aspect-ratio:9/16;max-height:510px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;background-size:cover;background-position:center;color:#fff;isolation:isolate}.video-wallpaper:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,12,25,.15),rgba(2,12,25,.88));z-index:-1}.video-wallpaper .wallpaper-title{font-size:1.5rem;font-weight:900;line-height:1.15;text-shadow:0 2px 12px #000;letter-spacing:.02em}.video-wallpaper .wallpaper-sub{font-size:.9rem;color:#e0efff;margin-top:12px}.video-wallpaper .wallpaper-play{display:inline-flex;width:64px;height:64px;align-items:center;justify-content:center;border-radius:50%;background:#159cff;color:#fff;font-size:1.8rem;margin-bottom:16px;box-shadow:0 0 25px rgba(21,156,255,.5)}.video-actions{padding:0 14px 15px}.video-link{display:inline-block;background:#159cff;color:#fff;padding:9px 13px;border-radius:22px;font-weight:800;font-size:.82rem}.video-link:hover{background:#0878ce}.payment-action{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.payment-action button,.payment-action a{border:1px solid var(--blue);border-radius:24px;padding:10px 13px;font-weight:800;cursor:pointer;background:var(--blue);color:#fff;font-size:.86rem}.payment-action .secondary{background:transparent;color:var(--blue2)}.payment-status{margin-top:14px;padding:13px;border:1px solid var(--line);background:#071729;border-radius:10px;display:none}.payment-status.show{display:block}.payment-status strong{color:var(--blue2)}.custom-amount{width:100%;max-width:260px;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#06111f;color:#fff;margin:5px 0 12px}
+    .video-frame{width:100%;aspect-ratio:9/16;max-height:510px;border:0;display:block;background:#000}.video-actions{padding:0 14px 15px}.video-link{display:inline-block;background:#159cff;color:#fff;padding:9px 13px;border-radius:22px;font-weight:800;font-size:.82rem}.video-link:hover{background:#0878ce}.payment-action{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.payment-action button,.payment-action a{border:1px solid var(--blue);border-radius:24px;padding:10px 13px;font-weight:800;cursor:pointer;background:var(--blue);color:#fff;font-size:.86rem}.payment-action .secondary{background:transparent;color:var(--blue2)}.payment-status{margin-top:14px;padding:13px;border:1px solid var(--line);background:#071729;border-radius:10px;display:none}.payment-status.show{display:block}.payment-status strong{color:var(--blue2)}.custom-amount{width:100%;max-width:260px;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:#06111f;color:#fff;margin:5px 0 12px}
     .video-placeholder{aspect-ratio:9/16;max-height:510px;background:linear-gradient(145deg,#0a2b4b,#0d5c99,#06111f);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;color:white}
     .video-placeholder .play{font-size:3rem;background:var(--blue);width:72px;height:72px;border-radius:50%;display:grid;place-items:center;margin-bottom:15px}
     .video-placeholder p{color:#e0efff}
@@ -69,7 +69,7 @@
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#home"><img class="brand-logo" src="listen-up-logo.png" alt="Listen Up logo"><span class="brand-text"><span>CHAD ELITE</span><small>LISTEN UP · LEVEL UP</small></span></a>
+    <a class="brand" href="#home">CE <span>CHAD ELITE</span></a>
     <nav>
       <a href="#home">HOME</a><a href="#videos">VIDEOS</a><a href="#daily">MOTIVATION</a><a href="#support">SUPPORT</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
     </nav>
@@ -99,13 +99,13 @@
 
   <section id="videos">
     <div class="wrap">
-      <div class="section-title"><div><div class="eyebrow">Watch · Learn · Grow</div><h2>Real Motivation Videos</h2></div><p>Motivation wallpapers · Open any video on TikTok</p></div>
+      <div class="section-title"><div><div class="eyebrow">Watch · Learn · Grow</div><h2>Real Motivation Videos</h2></div><p>Embedded TikTok videos will play here.</p></div>
       <div class="video-grid">
-        <article class="video-card"><a class="video-wallpaper" href="https://www.tiktok.com/@chad_elite_/video/7640013036706614548" target="_blank" rel="noopener" aria-label="Watch motivation video 1 on TikTok" style="background-image:url('motivation-wallpaper.png');background-position:center"><div><span class="wallpaper-play">▶</span><div class="wallpaper-title">BETTER THAN YESTERDAY</div><div class="wallpaper-sub">Small steps lead to big results.</div><div class="wallpaper-sub">Tap to watch on TikTok ↗</div></div></a><h3>Motivation Video 1</h3><p>Mindset · Discipline · Motivation</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7640013036706614548" target="_blank" rel="noopener">Watch video on TikTok ↗</a></div></article>
-        <article class="video-card"><a class="video-wallpaper" href="https://www.tiktok.com/@chad_elite_/video/7630740629961657620" target="_blank" rel="noopener" aria-label="Watch motivation video 2 on TikTok" style="background-image:url('motivation-wallpaper.png');background-position:65% center"><div><span class="wallpaper-play">▶</span><div class="wallpaper-title">DISCIPLINE BUILDS FREEDOM</div><div class="wallpaper-sub">Do the work. Build your future.</div><div class="wallpaper-sub">Tap to watch on TikTok ↗</div></div></a><h3>Motivation Video 2</h3><p>Keep going when it gets hard.</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7630740629961657620" target="_blank" rel="noopener">Watch video on TikTok ↗</a></div></article>
-        <article class="video-card"><a class="video-wallpaper" href="https://www.tiktok.com/@chad_elite_/video/7674661082891291925" target="_blank" rel="noopener" aria-label="Watch motivation video 3 on TikTok" style="background-image:url('motivation-wallpaper.png');background-position:right center"><div><span class="wallpaper-play">▶</span><div class="wallpaper-title">BIG DREAMS NEED ACTION</div><div class="wallpaper-sub">Plan. Focus. Take action. Repeat.</div><div class="wallpaper-sub">Tap to watch on TikTok ↗</div></div></a><h3>Motivation Video 3</h3><p>Consistency · Focus · Success</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7674661082891291925" target="_blank" rel="noopener">Watch video on TikTok ↗</a></div></article>
-        <article class="video-card"><a class="video-wallpaper" href="https://www.tiktok.com/@chad_elite_/video/7663554211224784149" target="_blank" rel="noopener" aria-label="Watch motivation video 4 on TikTok" style="background-image:url('motivation-wallpaper.png');background-position:30% center"><div><span class="wallpaper-play">▶</span><div class="wallpaper-title">KEEP GOING</div><div class="wallpaper-sub">Consistency creates progress.</div><div class="wallpaper-sub">Tap to watch on TikTok ↗</div></div></a><h3>Motivation Video 4</h3><p>Build your mindset every day.</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7663554211224784149" target="_blank" rel="noopener">Watch video on TikTok ↗</a></div></article>
-        <article class="video-card"><a class="video-wallpaper" href="https://www.tiktok.com/@chad_elite_/video/7657064080083062037" target="_blank" rel="noopener" aria-label="Watch motivation video 5 on TikTok" style="background-image:url('motivation-wallpaper.png');background-position:center"><div><span class="wallpaper-play">▶</span><div class="wallpaper-title">DREAM BIG. WORK HARD.</div><div class="wallpaper-sub">Never quit on your goals.</div><div class="wallpaper-sub">Tap to watch on TikTok ↗</div></div></a><h3>Motivation Video 5</h3><p>Dream big. Work hard. Never quit.</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7657064080083062037" target="_blank" rel="noopener">Watch video on TikTok ↗</a></div></article>
+        <article class="video-card"><iframe class="video-frame" src="https://www.tiktok.com/embed/v2/7640013036706614548" title="Chad Elite TikTok motivation video 1" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><h3>Motivation Video 1</h3><p>Mindset · Discipline · Motivation</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7640013036706614548" target="_blank" rel="noopener">If video won't play, watch on TikTok ↗</a></div></article>
+        <article class="video-card"><iframe class="video-frame" src="https://www.tiktok.com/embed/v2/7630740629961657620" title="Chad Elite TikTok motivation video 2" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><h3>Motivation Video 2</h3><p>Keep going when it gets hard.</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7630740629961657620" target="_blank" rel="noopener">If video won't play, watch on TikTok ↗</a></div></article>
+        <article class="video-card"><iframe class="video-frame" src="https://www.tiktok.com/embed/v2/7674661082891291925" title="Chad Elite TikTok motivation video 3" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><h3>Motivation Video 3</h3><p>Consistency · Focus · Success</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7674661082891291925" target="_blank" rel="noopener">If video won't play, watch on TikTok ↗</a></div></article>
+        <article class="video-card"><iframe class="video-frame" src="https://www.tiktok.com/embed/v2/7663554211224784149" title="Chad Elite TikTok motivation video 4" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><h3>Motivation Video 4</h3><p>Build your mindset every day.</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7663554211224784149" target="_blank" rel="noopener">If video won't play, watch on TikTok ↗</a></div></article>
+        <article class="video-card"><iframe class="video-frame" src="https://www.tiktok.com/embed/v2/7657064080083062037" title="Chad Elite TikTok motivation video 5" allow="fullscreen; encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><h3>Motivation Video 5</h3><p>Dream big. Work hard. Never quit.</p><div class="video-actions"><a class="video-link" href="https://www.tiktok.com/@chad_elite_/video/7657064080083062037" target="_blank" rel="noopener">If video won't play, watch on TikTok ↗</a></div></article>
       </div>
     </div>
   </section>
@@ -159,12 +159,17 @@
 </main>
 <div class="modal-backdrop" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" onclick="if(event.target===this)closeLogin()">
   <div class="modal"><button class="close-modal" type="button" aria-label="Close" onclick="closeLogin()">×</button><h2 id="loginTitle">Member <span style="color:var(--blue)">Login</span></h2>
-    <p>Choose how you would like to sign in. These buttons are a preview; secure login must be connected before the site can create accounts.</p>
-    <form onsubmit="event.preventDefault();document.getElementById('loginMessage').textContent='Login is a preview only and is not connected to a real account system yet.';">
+    <p id="authIntro">Log in to your CHAD ELITE account, or create a new account.</p>
+    <form id="authForm" onsubmit="window.handleEmailAuth(event)">
       <label for="loginEmail">Email address</label><input id="loginEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
-      <label for="loginPassword">Password</label><input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter password" required>
-      <button class="btn" type="submit">Log in</button>
-    </form><button class="btn-outline" type="button" style="width:100%;margin-top:12px" onclick="document.getElementById('loginMessage').textContent='Google sign-in is not connected yet. Configure a secure authentication provider before using this feature.'">Continue with Google</button><div id="loginMessage" class="form-message" aria-live="polite"></div><p class="small-note">Email/password and Google sign-in are shown as options, but neither is active until authentication is configured.</p>
+      <label for="loginPassword">Password</label><input id="loginPassword" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required>
+      <button class="btn" id="emailAuthButton" type="submit">Log in</button>
+    </form>
+    <button class="btn-outline" id="toggleAuthMode" type="button" style="width:100%;margin-top:10px" onclick="window.toggleAuthMode()">Create an account</button>
+    <button class="btn-outline" id="googleAuthButton" type="button" style="width:100%;margin-top:10px" onclick="window.signInWithGoogle()">Continue with Google</button>
+    <button type="button" id="resetPasswordButton" style="width:100%;margin-top:10px;background:none;border:0;color:var(--blue2);cursor:pointer" onclick="window.resetAuthPassword()">Forgot password?</button>
+    <button class="btn-outline" id="logoutButton" type="button" style="display:none;width:100%;margin-top:10px" onclick="window.logOutUser()">Log out</button>
+    <div id="loginMessage" class="form-message" aria-live="polite"></div><p class="small-note">Use an email you control. Passwords are handled by Firebase Authentication, not stored in this website's code.</p>
   </div>
 </div>
 
@@ -179,6 +184,87 @@ function customAmountChanged(){const value=Number(document.getElementById('custo
 function preparePayment(method){const amount=selectedSupportAmount;const box=document.getElementById('paymentStatus');if(!amount||amount<500){box.innerHTML='Please select or enter an amount of at least <strong>TZS 500</strong> first.';box.classList.add('show');return}const isMpesa=method==='mpesa';const provider=isMpesa?'M-Pesa':'HaloPesa';const number=isMpesa?'+255 757 446 941':'+255 634 192 541';const digits=isMpesa?'255757446941':'255634192541';const message='Hello Chad Elite, I would like to support you with TZS '+amount.toLocaleString()+' using '+provider+'. Please confirm the payment instructions. Recipient: Charles Daud Kabadi, '+number+'.';box.innerHTML='<strong>'+provider+' support — TZS '+amount.toLocaleString()+'</strong><br>1. Open your mobile-money menu on your phone.<br>2. Choose the send-money option and enter <strong>'+number+'</strong>.<br>3. Confirm the recipient is <strong>Charles Daud Kabadi</strong> and enter <strong>TZS '+amount.toLocaleString()+'</strong>.<br>4. Check the details carefully and confirm only if correct.<br><div class="payment-action"><button type="button" onclick="copyPaymentNumber(\''+digits+'\')">Copy number</button><a class="secondary" href="https://wa.me/255757446941?text='+encodeURIComponent(message)+'" target="_blank" rel="noopener">Ask on WhatsApp ↗</a></div><p class="small-note">This website cannot automatically charge or transfer money. You must confirm the transfer in your mobile-money service. Never share your PIN or OTP.</p>';box.classList.add('show')}
 async function copyPaymentNumber(number){try{await navigator.clipboard.writeText(number);alert('Payment number copied.')}catch(e){alert('Payment number: '+number)}}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLogin()});
+</script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, sendPasswordResetEmail, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCehWBOh3gt3Y80JBAo1f-q91JKnO4CKGg",
+  authDomain: "chad-elite-website.firebaseapp.com",
+  projectId: "chad-elite-website",
+  storageBucket: "chad-elite-website.firebasestorage.app",
+  messagingSenderId: "830956894889",
+  appId: "1:830956894889:web:7961049178e92ff06f07b8",
+  measurementId: "G-1K3X66WVL6"
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
+let authMode = 'login';
+let currentUser = null;
+const messageEl = () => document.getElementById('loginMessage');
+function showAuthMessage(message, isError=false) {
+  const el = messageEl(); el.textContent = message; el.style.color = isError ? '#ff9d9d' : 'var(--blue2)';
+}
+function friendlyError(error) {
+  const codes = {
+    'auth/invalid-email':'Please enter a valid email address.',
+    'auth/missing-password':'Please enter your password.',
+    'auth/weak-password':'Use a password with at least 6 characters.',
+    'auth/email-already-in-use':'An account already exists with this email. Try logging in.',
+    'auth/invalid-credential':'Email or password is incorrect.',
+    'auth/user-not-found':'No account was found. Create an account first.',
+    'auth/wrong-password':'Email or password is incorrect.',
+    'auth/popup-closed-by-user':'Google sign-in was cancelled.',
+    'auth/unauthorized-domain':'This website domain is not authorized in Firebase Authentication settings.',
+    'auth/network-request-failed':'Network error. Check your internet connection and try again.'
+  };
+  return codes[error.code] || ('Could not complete sign-in: ' + (error.message || error.code || 'Unknown error'));
+}
+window.toggleAuthMode = function() {
+  authMode = authMode === 'login' ? 'signup' : 'login';
+  document.getElementById('loginTitle').innerHTML = authMode === 'signup' ? 'Create <span style="color:var(--blue)">Account</span>' : 'Member <span style="color:var(--blue)">Login</span>';
+  document.getElementById('emailAuthButton').textContent = authMode === 'signup' ? 'Create account' : 'Log in';
+  document.getElementById('toggleAuthMode').textContent = authMode === 'signup' ? 'Already have an account? Log in' : 'Create an account';
+  document.getElementById('resetPasswordButton').style.display = authMode === 'signup' ? 'none' : 'block';
+  showAuthMessage('');
+};
+window.handleEmailAuth = async function(event) {
+  event.preventDefault();
+  const email = document.getElementById('loginEmail').value.trim();
+  const password = document.getElementById('loginPassword').value;
+  const button = document.getElementById('emailAuthButton'); button.disabled = true; button.textContent = 'Please wait…';
+  try {
+    const result = authMode === 'signup'
+      ? await createUserWithEmailAndPassword(auth, email, password)
+      : await signInWithEmailAndPassword(auth, email, password);
+    showAuthMessage((authMode === 'signup' ? 'Account created' : 'Logged in') + ' successfully. Signed in as ' + result.user.email + '.');
+  } catch (error) { showAuthMessage(friendlyError(error), true); }
+  finally { button.disabled = false; button.textContent = authMode === 'signup' ? 'Create account' : 'Log in'; }
+};
+window.signInWithGoogle = async function() {
+  try { const result = await signInWithPopup(auth, googleProvider); showAuthMessage('Welcome, ' + (result.user.displayName || result.user.email) + '! You are signed in.'); }
+  catch (error) { showAuthMessage(friendlyError(error), true); }
+};
+window.resetAuthPassword = async function() {
+  const email = document.getElementById('loginEmail').value.trim();
+  if (!email) { showAuthMessage('Enter your email address first, then click Forgot password.', true); return; }
+  try { await sendPasswordResetEmail(auth, email); showAuthMessage('Password reset email sent. Check your inbox and spam folder.'); }
+  catch (error) { showAuthMessage(friendlyError(error), true); }
+};
+window.logOutUser = async function() { try { await signOut(auth); showAuthMessage('You have logged out.'); } catch(error) { showAuthMessage(friendlyError(error), true); } };
+onAuthStateChanged(auth, user => {
+  currentUser = user;
+  const loginButton = document.querySelector('.nav-actions .btn-outline');
+  if (loginButton) loginButton.textContent = user ? 'My account' : 'Log in';
+  document.getElementById('logoutButton').style.display = user ? 'block' : 'none';
+  document.getElementById('googleAuthButton').style.display = user ? 'none' : 'block';
+  document.getElementById('toggleAuthMode').style.display = user ? 'none' : 'block';
+  document.getElementById('authForm').style.display = user ? 'none' : 'block';
+  document.getElementById('resetPasswordButton').style.display = user || authMode === 'signup' ? 'none' : 'block';
+  if (user) showAuthMessage('Signed in as ' + (user.email || user.displayName) + '.');
+});
 </script>
 </body>
 </html>
